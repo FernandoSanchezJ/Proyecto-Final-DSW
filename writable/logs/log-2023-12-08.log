@@ -1,0 +1,873 @@
+INFO - 2023-12-08 03:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 03:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 03:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-08 03:37:29 --> mysqli_sql_exception: Table 'proyecto.rutas' doesn't exist in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT rutas.*,...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT rutas.*,...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT rutas.*,...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(515): CodeIgniter\Database\BaseConnection->query('SELECT rutas.*,...')
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#9 {main}
+CRITICAL - 2023-12-08 03:37:29 --> Table 'proyecto.rutas' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\Admin.php(515): CodeIgniter\Database\BaseConnection->query('SELECT rutas.*, repartidor.*, infoPaquetes.*
+            FROM rutas, repartidor, infoPaquetes 
+            where PNR.idT = tipoPNR.idT 
+            and PNR.idRepartidor = repartidor.idRepartidor')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 04:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 04:01:04 --> Undefined variable $repartidores
+in APPPATH\Views\admin\salidas.php on line 27.
+ 1 APPPATH\Views\admin\salidas.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repartidores', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php', 27)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/salidas', [], true)
+ 5 APPPATH\Controllers\Admin.php(520): view('admin/salidas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 04:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 04:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 04:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 04:54:39 --> Undefined variable $repartidor
+in APPPATH\Views\admin\salidas.php on line 24.
+ 1 APPPATH\Views\admin\salidas.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repartidor', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php', 24)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/salidas', [], true)
+ 5 APPPATH\Controllers\Admin.php(520): view('admin/salidas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 04:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 04:57:18 --> Undefined variable $repartidor
+in APPPATH\Views\admin\salidas.php on line 28.
+ 1 APPPATH\Views\admin\salidas.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repartidor', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/salidas', [], true)
+ 5 APPPATH\Controllers\Admin.php(520): view('admin/salidas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 04:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 05:19:03 --> Undefined property: stdClass::$nombre
+in APPPATH\Views\admin\salidas.php on line 37.
+ 1 APPPATH\Views\admin\salidas.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombre', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/salidas', [], true)
+ 5 APPPATH\Controllers\Admin.php(520): view('admin/salidas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 05:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 05:20:06 --> Undefined property: stdClass::$nombre
+in APPPATH\Views\admin\salidas.php on line 37.
+ 1 APPPATH\Views\admin\salidas.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombre', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/salidas', [], true)
+ 5 APPPATH\Controllers\Admin.php(523): view('admin/salidas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 05:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 05:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:07:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:42:35 --> include(../admin\crear_PNR.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\mostrar_PNR.php on line 10.
+ 1 APPPATH\Views\admin\mostrar_PNR.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../admin\\crear_PNR.php): Failed to open stream: No such file or directory', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php', 10)
+ 2 APPPATH\Views\admin\mostrar_PNR.php(10): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 6 APPPATH\Controllers\Admin.php(460): view('admin/mostrar_PNR', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 06:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:42:37 --> include(../admin\crear_PNR.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\mostrar_PNR.php on line 10.
+ 1 APPPATH\Views\admin\mostrar_PNR.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../admin\\crear_PNR.php): Failed to open stream: No such file or directory', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php', 10)
+ 2 APPPATH\Views\admin\mostrar_PNR.php(10): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 6 APPPATH\Controllers\Admin.php(460): view('admin/mostrar_PNR', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 06:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:42:45 --> include(..\admin\crear_PNR.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\mostrar_PNR.php on line 10.
+ 1 APPPATH\Views\admin\mostrar_PNR.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(..\\admin\\crear_PNR.php): Failed to open stream: No such file or directory', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php', 10)
+ 2 APPPATH\Views\admin\mostrar_PNR.php(10): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 6 APPPATH\Controllers\Admin.php(460): view('admin/mostrar_PNR', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 06:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:42:53 --> include(..\admin\crear_PNR): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\mostrar_PNR.php on line 10.
+ 1 APPPATH\Views\admin\mostrar_PNR.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(..\\admin\\crear_PNR): Failed to open stream: No such file or directory', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php', 10)
+ 2 APPPATH\Views\admin\mostrar_PNR.php(10): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 6 APPPATH\Controllers\Admin.php(460): view('admin/mostrar_PNR', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 06:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:43:41 --> syntax error, unexpected token "="
+in APPPATH\Views\admin\mostrar_PNR.php on line 10.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 3 APPPATH\Controllers\Admin.php(460): view('admin/mostrar_PNR', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 06:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:44:20 --> syntax error, unexpected single-quoted string ") ?>"
+in APPPATH\Views\admin\mostrar_PNR.php on line 10.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 3 APPPATH\Controllers\Admin.php(460): view('admin/mostrar_PNR', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 06:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:44:33 --> include(/admin/crear_PNR): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\mostrar_PNR.php on line 10.
+ 1 APPPATH\Views\admin\mostrar_PNR.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(/admin/crear_PNR): Failed to open stream: No such file or directory', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php', 10)
+ 2 APPPATH\Views\admin\mostrar_PNR.php(10): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 6 APPPATH\Controllers\Admin.php(460): view('admin/mostrar_PNR', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 06:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:44:52 --> Undefined variable $repartidores
+in APPPATH\Views\admin\crear_PNR.php on line 16.
+ 1 APPPATH\Views\admin\crear_PNR.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repartidores', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 16)
+ 2 APPPATH\Views\admin\mostrar_PNR.php(10): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 6 APPPATH\Controllers\Admin.php(460): view('admin/mostrar_PNR', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 06:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:46:03 --> Undefined variable $repartidores
+in APPPATH\Views\admin\crear_PNR.php on line 16.
+ 1 APPPATH\Views\admin\crear_PNR.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repartidores', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 16)
+ 2 APPPATH\Views\admin\mostrar_PNR.php(10): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 6 APPPATH\Controllers\Admin.php(460): view('admin/mostrar_PNR', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 06:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:46:26 --> include(C:..\admin\crear_PNR.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\mostrar_PNR.php on line 10.
+ 1 APPPATH\Views\admin\mostrar_PNR.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(C:..\\admin\\crear_PNR.php): Failed to open stream: No such file or directory', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php', 10)
+ 2 APPPATH\Views\admin\mostrar_PNR.php(10): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 6 APPPATH\Controllers\Admin.php(460): view('admin/mostrar_PNR', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 06:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:46:31 --> include(..\admin\crear_PNR.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\mostrar_PNR.php on line 10.
+ 1 APPPATH\Views\admin\mostrar_PNR.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(..\\admin\\crear_PNR.php): Failed to open stream: No such file or directory', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php', 10)
+ 2 APPPATH\Views\admin\mostrar_PNR.php(10): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 6 APPPATH\Controllers\Admin.php(460): view('admin/mostrar_PNR', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 06:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:46:35 --> Undefined variable $repartidores
+in APPPATH\Views\admin\crear_PNR.php on line 16.
+ 1 APPPATH\Views\admin\crear_PNR.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repartidores', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 16)
+ 2 APPPATH\Views\admin\mostrar_PNR.php(10): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 6 APPPATH\Controllers\Admin.php(460): view('admin/mostrar_PNR', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 06:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:47:14 --> Undefined variable $repartidores
+in APPPATH\Views\admin\crear_PNR.php on line 13.
+ 1 APPPATH\Views\admin\crear_PNR.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repartidores', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 13)
+ 2 APPPATH\Views\admin\mostrar_PNR.php(10): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 6 APPPATH\Controllers\Admin.php(460): view('admin/mostrar_PNR', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 06:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:49:19 --> Undefined variable $repartidores
+in APPPATH\Views\admin\crear_PNR.php on line 21.
+ 1 APPPATH\Views\admin\crear_PNR.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repartidores', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 21)
+ 2 APPPATH\Views\admin\mostrar_PNR.php(10): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 6 APPPATH\Controllers\Admin.php(460): view('admin/mostrar_PNR', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 06:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:49:20 --> Undefined variable $repartidores
+in APPPATH\Views\admin\crear_PNR.php on line 21.
+ 1 APPPATH\Views\admin\crear_PNR.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repartidores', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 21)
+ 2 APPPATH\Views\admin\mostrar_PNR.php(10): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 6 APPPATH\Controllers\Admin.php(460): view('admin/mostrar_PNR', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 06:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:51:57 --> Undefined variable $repartidores
+in APPPATH\Views\admin\salidas.php on line 38.
+ 1 APPPATH\Views\admin\salidas.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repartidores', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/salidas', [], true)
+ 5 APPPATH\Controllers\Admin.php(523): view('admin/salidas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 06:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 07:38:34 --> Undefined variable $ruta
+in APPPATH\Views\admin\salidas.php on line 29.
+ 1 APPPATH\Views\admin\salidas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ruta', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/salidas', [], true)
+ 5 APPPATH\Controllers\Admin.php(533): view('admin/salidas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 07:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 07:38:49 --> Attempt to read property "cantidad_paquetes" on array
+in APPPATH\Views\admin\salidas.php on line 29.
+ 1 APPPATH\Views\admin\salidas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "cantidad_paquetes" on array', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/salidas', [], true)
+ 5 APPPATH\Controllers\Admin.php(533): view('admin/salidas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 07:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 07:38:53 --> Undefined property: stdClass::$cantidad_paquetes
+in APPPATH\Views\admin\salidas.php on line 29.
+ 1 APPPATH\Views\admin\salidas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$cantidad_paquetes', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/salidas', [], true)
+ 5 APPPATH\Controllers\Admin.php(533): view('admin/salidas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 07:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 07:40:19 --> Undefined property: stdClass::$noPaquetes
+in APPPATH\Views\admin\salidas.php on line 29.
+ 1 APPPATH\Views\admin\salidas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$noPaquetes', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/salidas', [], true)
+ 5 APPPATH\Controllers\Admin.php(533): view('admin/salidas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 07:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 07:41:55 --> Undefined property: stdClass::$noPaquetes
+in APPPATH\Views\admin\salidas.php on line 30.
+ 1 APPPATH\Views\admin\salidas.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$noPaquetes', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php', 30)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/salidas', [], true)
+ 5 APPPATH\Controllers\Admin.php(533): view('admin/salidas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 07:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 07:44:58 --> Undefined variable $pnrModel
+in APPPATH\Controllers\Admin.php on line 537.
+ 1 APPPATH\Controllers\Admin.php(537): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnrModel', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 537)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertSalida()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 07:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 07:45:32 --> Undefined variable $pnrModel
+in APPPATH\Controllers\Admin.php on line 537.
+ 1 APPPATH\Controllers\Admin.php(537): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnrModel', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 537)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertSalida()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 07:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-08 07:45:44 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proyecto`.`salidas`, CONSTRAINT `id_rut` FOREIGN KEY (`idRuta`) REFERENCES `ruta` (`idRuta`)) in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `sa...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sa...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sa...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sa...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(537): CodeIgniter\Model->insert(Array)
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->insertSalida()
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#13 {main}
+CRITICAL - 2023-12-08 07:45:44 --> Cannot add or update a child row: a foreign key constraint fails (`proyecto`.`salidas`, CONSTRAINT `id_rut` FOREIGN KEY (`idRuta`) REFERENCES `ruta` (`idRuta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `salidas` (`idRepartidor`, `idRuta`) VALUES (:idRepartidor:, :idRuta:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(537): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertSalida()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 07:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:48:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-08 07:48:17 --> mysqli_sql_exception: Unknown column 'idRepartidor' in 'field list' in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `sa...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sa...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sa...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sa...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(537): CodeIgniter\Model->insert(Array)
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->insertSalida()
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#13 {main}
+CRITICAL - 2023-12-08 07:48:17 --> Unknown column 'idRepartidor' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `salidas` (`idRepartidor`, `idRuta`) VALUES (:idRepartidor:, :idRuta:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(537): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertSalida()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 07:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 07:48:54 --> The route for "admin/mostrar" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/mostrar')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Admin.php(538): redirect('admin/mostrar', 'refresh')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertSalida()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 07:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:53:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 07:59:00 --> The route for "admin/salida" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/salida')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Admin.php(538): redirect('admin/salida')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertSalida()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 07:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 07:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 08:00:18 --> Undefined variable $salidas
+in APPPATH\Views\admin\salidas.php on line 17.
+ 1 APPPATH\Views\admin\salidas.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $salidas', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/salidas', [], true)
+ 5 APPPATH\Controllers\Admin.php(538): view('admin/salidas')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertSalida()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 08:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 08:03:00 --> Undefined property: stdClass::$id
+in APPPATH\Views\admin\salidas.php on line 35.
+ 1 APPPATH\Views\admin\salidas.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php', 35)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/salidas', [], true)
+ 5 APPPATH\Controllers\Admin.php(522): view('admin/salidas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 08:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 08:03:18 --> Undefined property: stdClass::$id
+in APPPATH\Views\admin\salidas.php on line 39.
+ 1 APPPATH\Views\admin\salidas.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php', 39)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\salidas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/salidas', [], true)
+ 5 APPPATH\Controllers\Admin.php(522): view('admin/salidas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 08:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:07:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-08 08:07:21 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `sa...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sa...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sa...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sa...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(537): CodeIgniter\Model->insert(Array)
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->insertSalida()
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#13 {main}
+CRITICAL - 2023-12-08 08:07:21 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `salidas` (`repartidor`, `ruta`) VALUES (:repartidor:, :ruta:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(537): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertSalida()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 08:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 08:26:11 --> Undefined variable $noPaquetes
+in APPPATH\Controllers\Admin.php on line 540.
+ 1 APPPATH\Controllers\Admin.php(540): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $noPaquetes', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 540)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertSalida()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 08:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 08:26:35 --> Undefined variable $noPaquetes
+in APPPATH\Controllers\Admin.php on line 540.
+ 1 APPPATH\Controllers\Admin.php(540): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $noPaquetes', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 540)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertSalida()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 08:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 08:30:10 --> Undefined variable $noPaquetes
+in APPPATH\Controllers\Admin.php on line 540.
+ 1 APPPATH\Controllers\Admin.php(540): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $noPaquetes', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 540)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertSalida()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 08:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 08:30:35 --> Undefined variable $noPaquetes
+in APPPATH\Controllers\Admin.php on line 540.
+ 1 APPPATH\Controllers\Admin.php(540): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $noPaquetes', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 540)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertSalida()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 08:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 08:30:47 --> Undefined variable $noPaquetes
+in APPPATH\Controllers\Admin.php on line 540.
+ 1 APPPATH\Controllers\Admin.php(540): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $noPaquetes', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 540)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertSalida()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 08:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 08:39:31 --> Undefined property: stdClass::$repartidor
+in APPPATH\Views\admin\mostrarSalidas.php on line 23.
+ 1 APPPATH\Views\admin\mostrarSalidas.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$repartidor', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarSalidas.php', 23)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarSalidas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrarSalidas', [], true)
+ 5 APPPATH\Controllers\Admin.php(518): view('admin/mostrarSalidas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarSalidas()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 08:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 08:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-08 15:26:41 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'proyecto', 3306, '', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(532): CodeIgniter\Database\BaseConnection->query('SELECT ruta.*, ...')
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(532): CodeIgniter\Database\BaseConnection->query('SELECT ruta.*, ...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#8 {main}
+CRITICAL - 2023-12-08 15:26:41 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Admin.php(532): CodeIgniter\Database\BaseConnection->query('SELECT ruta.*, infoPaquetes.*
+            FROM ruta, infoPaquetes 
+            where ruta.idRuta = infoPaquetes.idRuta')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->salidas()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 15:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:41:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 15:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 17:58:40 --> Undefined variable $repartidores
+in APPPATH\Views\admin\bienvenida_Vis.php on line 81.
+ 1 APPPATH\Views\admin\bienvenida_Vis.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repartidores', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\bienvenida_Vis.php', 81)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\bienvenida_Vis.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/bienvenida_Vis', [], true)
+ 5 APPPATH\Controllers\Admin.php(569): view('admin/bienvenida_Vis')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarVs()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-08 17:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 18:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

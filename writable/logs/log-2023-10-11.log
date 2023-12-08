@@ -1,0 +1,20 @@
+CRITICAL - 2023-10-11 19:28:06 --> Invalid file: "reparidor/menu.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('reparidor/menu.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reparidor/menu', [], true)
+ 3 APPPATH\Controllers\Repartidor.php(18): view('reparidor/menu')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Repartidor->mostrarMenu()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Repartidor))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\Desktop\\codeig4\\public\\index.php')
+CRITICAL - 2023-10-11 19:28:55 --> Invalid file: "reparidor/menu.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('reparidor/menu.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('reparidor/menu', [], true)
+ 3 APPPATH\Controllers\Repartidor.php(18): view('reparidor/menu')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Repartidor->mostrarMenu()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Repartidor))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\Desktop\\codeig4\\public\\index.php')

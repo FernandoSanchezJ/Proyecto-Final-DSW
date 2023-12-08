@@ -1,0 +1,146 @@
+ERROR - 2023-12-03 03:07:08 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'proyecto', 3306, '', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->mostrarRepartidores()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(27): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->mostrarRepartidores()
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#11 {main}
+CRITICAL - 2023-12-03 03:07:08 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `repartidor`
+WHERE `repartidor`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Admin.php(27): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarRepartidores()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-03 08:00:18 --> Undefined variable $paquete
+in APPPATH\Views\admin\mostrarP.php on line 57.
+ 1 APPPATH\Views\admin\mostrarP.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paquete', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarP.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarP.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrarP', [], true)
+ 5 APPPATH\Controllers\Admin.php(123): view('admin/mostrarP', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPaquetes()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-03 08:22:58 --> include(\admin\agregar_paq.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\mostrarP.php on line 8.
+ 1 APPPATH\Views\admin\mostrarP.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(\\admin\\agregar_paq.php): Failed to open stream: No such file or directory', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarP.php', 8)
+ 2 APPPATH\Views\admin\mostrarP.php(8): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarP.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrarP', [], true)
+ 6 APPPATH\Controllers\Admin.php(123): view('admin/mostrarP', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPaquetes()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-03 08:23:22 --> include(\admin\agregar_paq): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\mostrarP.php on line 8.
+ 1 APPPATH\Views\admin\mostrarP.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(\\admin\\agregar_paq): Failed to open stream: No such file or directory', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarP.php', 8)
+ 2 APPPATH\Views\admin\mostrarP.php(8): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarP.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrarP', [], true)
+ 6 APPPATH\Controllers\Admin.php(123): view('admin/mostrarP', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPaquetes()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-03 08:23:40 --> include(admin\agregar_paq): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\mostrarP.php on line 8.
+ 1 APPPATH\Views\admin\mostrarP.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(admin\\agregar_paq): Failed to open stream: No such file or directory', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarP.php', 8)
+ 2 APPPATH\Views\admin\mostrarP.php(8): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarP.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrarP', [], true)
+ 6 APPPATH\Controllers\Admin.php(123): view('admin/mostrarP', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPaquetes()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-03 08:45:43 --> Undefined variable $pnrs
+in APPPATH\Views\admin\crear_PNR.php on line 9.
+ 1 APPPATH\Views\admin\crear_PNR.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnrs', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 9)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(302): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-03 08:46:02 --> Undefined variable $pnrs
+in APPPATH\Views\admin\crear_PNR.php on line 9.
+ 1 APPPATH\Views\admin\crear_PNR.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnrs', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 9)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(302): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-03 08:46:10 --> Undefined variable $pnrs
+in APPPATH\Views\admin\crear_PNR.php on line 9.
+ 1 APPPATH\Views\admin\crear_PNR.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnrs', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 9)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(302): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-03 08:53:17 --> Too few arguments to function App\Controllers\Admin::agregarPNR(), 0 passed in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Admin.php on line 291.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-03 08:55:50 --> Too few arguments to function App\Controllers\Admin::agregarPNR(), 0 passed in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Admin.php on line 291.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')

@@ -1,0 +1,1110 @@
+ERROR - 2023-12-05 05:06:36 --> mysqli_sql_exception: Unknown column 'tipoPNR.deleted_at' in 'where clause' in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(295): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#12 {main}
+CRITICAL - 2023-12-05 05:06:36 --> Unknown column 'tipoPNR.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tipoPNR`
+WHERE `tipoPNR`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Admin.php(295): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 05:06:55 --> mysqli_sql_exception: Unknown column 'tipoPNR.deleted_at' in 'where clause' in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(295): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#12 {main}
+CRITICAL - 2023-12-05 05:06:55 --> Unknown column 'tipoPNR.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tipoPNR`
+WHERE `tipoPNR`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Admin.php(295): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 05:07:45 --> Undefined variable $pnrs
+in APPPATH\Views\admin\crear_PNR.php on line 10.
+ 1 APPPATH\Views\admin\crear_PNR.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnrs', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(302): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 05:09:26 --> Undefined variable $tipospnrModel
+in APPPATH\Controllers\Admin.php on line 295.
+ 1 APPPATH\Controllers\Admin.php(295): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tipospnrModel', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 295)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 05:10:16 --> mysqli_sql_exception: Unknown column 'tipoPNR.deleted_at' in 'where clause' in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(295): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#12 {main}
+CRITICAL - 2023-12-05 05:10:16 --> Unknown column 'tipoPNR.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tipoPNR`
+WHERE `tipoPNR`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Admin.php(295): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 05:13:54 --> Undefined variable $pnrs
+in APPPATH\Views\admin\crear_PNR.php on line 10.
+ 1 APPPATH\Views\admin\crear_PNR.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnrs', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(300): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 05:14:22 --> Undefined variable $pnrs
+in APPPATH\Views\admin\crear_PNR.php on line 7.
+ 1 APPPATH\Views\admin\crear_PNR.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnrs', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(300): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 05:14:53 --> Undefined variable $pnrs
+in APPPATH\Views\admin\crear_PNR.php on line 7.
+ 1 APPPATH\Views\admin\crear_PNR.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnrs', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(300): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 05:15:26 --> Undefined variable $pnrs
+in APPPATH\Views\admin\crear_PNR.php on line 7.
+ 1 APPPATH\Views\admin\crear_PNR.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnrs', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(300): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 06:09:34 --> Undefined variable $pnrs
+in APPPATH\Views\admin\crear_PNR.php on line 7.
+ 1 APPPATH\Views\admin\crear_PNR.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnrs', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(300): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 06:10:17 --> Undefined variable $pnrs
+in APPPATH\Views\admin\crear_PNR.php on line 8.
+ 1 APPPATH\Views\admin\crear_PNR.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnrs', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 8)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(300): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 06:49:38 --> mysqli_sql_exception: Unknown column 'paquete.idInfo' in 'where clause' in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT carro.*,...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT carro.*,...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT carro.*,...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(189): CodeIgniter\Database\BaseConnection->query('SELECT carro.*,...')
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#9 {main}
+CRITICAL - 2023-12-05 06:49:38 --> Unknown column 'paquete.idInfo' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\Admin.php(189): CodeIgniter\Database\BaseConnection->query('SELECT carro.*, repartidor.*
+        FROM carro, repartidor 
+        where repartidor.idCarro = carro.idCarro
+        and paquete.idInfo = infoPaquetes.idInfo')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 06:49:55 --> mysqli_sql_exception: Unknown column 'paquete.idInfo' in 'where clause' in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT carro.*,...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT carro.*,...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT carro.*,...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(189): CodeIgniter\Database\BaseConnection->query('SELECT carro.*,...')
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#9 {main}
+CRITICAL - 2023-12-05 06:49:55 --> Unknown column 'paquete.idInfo' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\Admin.php(189): CodeIgniter\Database\BaseConnection->query('SELECT carro.*, repartidor.*
+        FROM carro, repartidor 
+        where repartidor.idCarro = carro.idCarro
+        and paquete.idInfo = infoPaquetes.idInfo')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 06:49:59 --> mysqli_sql_exception: Unknown column 'paquete.idInfo' in 'where clause' in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT carro.*,...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT carro.*,...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT carro.*,...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(189): CodeIgniter\Database\BaseConnection->query('SELECT carro.*,...')
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#9 {main}
+CRITICAL - 2023-12-05 06:49:59 --> Unknown column 'paquete.idInfo' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\Admin.php(189): CodeIgniter\Database\BaseConnection->query('SELECT carro.*, repartidor.*
+        FROM carro, repartidor 
+        where repartidor.idCarro = carro.idCarro
+        and paquete.idInfo = infoPaquetes.idInfo')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 06:55:07 --> syntax error, unexpected variable "$carroModel"
+in APPPATH\Controllers\Admin.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 06:58:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' carro.idCarro' at line 3 in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT carro.*,...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT carro.*,...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT carro.*,...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(188): CodeIgniter\Database\BaseConnection->query('SELECT carro.*,...')
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#9 {main}
+CRITICAL - 2023-12-05 06:58:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' carro.idCarro' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\Admin.php(188): CodeIgniter\Database\BaseConnection->query('SELECT carro.*, repartidor.*
+            FROM repartidor, carro
+            where repartidor.idCarro, carro.idCarro')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 06:59:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' carro.idCarro' at line 3 in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT carro.*,...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT carro.*,...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT carro.*,...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(188): CodeIgniter\Database\BaseConnection->query('SELECT carro.*,...')
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#9 {main}
+CRITICAL - 2023-12-05 06:59:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' carro.idCarro' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\Admin.php(188): CodeIgniter\Database\BaseConnection->query('SELECT carro.*, repartidor.*
+            FROM repartidor, carro
+            where repartidor.idCarro, carro.idCarro')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 06:59:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' carro.idCarro' at line 3 in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT carro.*,...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT carro.*,...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT carro.*,...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(188): CodeIgniter\Database\BaseConnection->query('SELECT carro.*,...')
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#9 {main}
+CRITICAL - 2023-12-05 06:59:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' carro.idCarro' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\Admin.php(188): CodeIgniter\Database\BaseConnection->query('SELECT carro.*, repartidor.*
+            FROM repartidor, carro
+            where repartidor.idCarro, carro.idCarro')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 07:03:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' carro.idCarro' at line 3 in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT carro.*,...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT carro.*,...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT carro.*,...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(188): CodeIgniter\Database\BaseConnection->query('SELECT carro.*,...')
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#9 {main}
+CRITICAL - 2023-12-05 07:03:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' carro.idCarro' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\Admin.php(188): CodeIgniter\Database\BaseConnection->query('SELECT carro.*, repartidor.*
+            FROM repartidor, carro
+            WHERE repartidor.idCarro, carro.idCarro')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 07:03:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' carro.idCarro' at line 3 in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT carro.*,...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT carro.*,...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT carro.*,...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(188): CodeIgniter\Database\BaseConnection->query('SELECT carro.*,...')
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#9 {main}
+CRITICAL - 2023-12-05 07:03:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' carro.idCarro' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\Admin.php(188): CodeIgniter\Database\BaseConnection->query('SELECT carro.*, repartidor.*
+            FROM repartidor, carro
+            WHERE repartidor.idCarro, carro.idCarro')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 07:03:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' carro.idCarro' at line 3 in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT carro.*,...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT carro.*,...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT carro.*,...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(188): CodeIgniter\Database\BaseConnection->query('SELECT carro.*,...')
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#9 {main}
+CRITICAL - 2023-12-05 07:03:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' carro.idCarro' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\Admin.php(188): CodeIgniter\Database\BaseConnection->query('SELECT carro.*, repartidor.*
+            FROM repartidor, carro
+            WHERE repartidor.idCarro, carro.idCarro')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 07:08:48 --> syntax error, unexpected end of file
+in APPPATH\Views\admin\mostrar_carro.php on line 36.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_carro', [], true)
+ 3 APPPATH\Controllers\Admin.php(194): view('admin/mostrar_carro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 07:08:59 --> Undefined variable $reaprtidores
+in APPPATH\Views\admin\mostrar_carro.php on line 18.
+ 1 APPPATH\Views\admin\mostrar_carro.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $reaprtidores', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_carro.php', 18)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_carro.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_carro', [], true)
+ 5 APPPATH\Controllers\Admin.php(194): view('admin/mostrar_carro', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 07:15:25 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\admin\mostrar_carro.php on line 38.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_carro', [], true)
+ 3 APPPATH\Controllers\Admin.php(194): view('admin/mostrar_carro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 07:16:32 --> Undefined property: stdClass::$id
+in APPPATH\Views\admin\mostrar_carro.php on line 19.
+ 1 APPPATH\Views\admin\mostrar_carro.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_carro.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_carro.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_carro', [], true)
+ 5 APPPATH\Controllers\Admin.php(194): view('admin/mostrar_carro', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarCarro()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 07:27:15 --> Call to a member function delete() on null
+in APPPATH\Controllers\Admin.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->delete('7')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 07:59:46 --> Call to a member function delete() on null
+in APPPATH\Controllers\Admin.php on line 277.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->deleteC('7')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 07:59:57 --> Call to a member function delete() on null
+in APPPATH\Controllers\Admin.php on line 277.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->deleteC('7')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 08:00:01 --> Call to a member function delete() on null
+in APPPATH\Controllers\Admin.php on line 277.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->deleteC('7')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 08:00:27 --> The route for "admin/mostrar_carro" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/mostrar_carro')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Admin.php(278): redirect('admin/mostrar_carro', 'refresh')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->deleteC('7')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 08:00:34 --> The route for "admin/mostrar_carro" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/mostrar_carro')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Admin.php(278): redirect('admin/mostrar_carro', 'refresh')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->deleteC('8')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 08:01:24 --> Call to a member function delete() on null
+in APPPATH\Controllers\Admin.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->delete('8')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 08:02:24 --> Undefined variable $idCarros
+in APPPATH\Controllers\Admin.php on line 76.
+ 1 APPPATH\Controllers\Admin.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idCarros', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->delete('9')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:03:34 --> Undefined variable $pnrs
+in APPPATH\Views\admin\crear_PNR.php on line 9.
+ 1 APPPATH\Views\admin\crear_PNR.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnrs', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 9)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(375): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:11:57 --> Undefined variable $tipos
+in APPPATH\Views\admin\crear_PNR.php on line 38.
+ 1 APPPATH\Views\admin\crear_PNR.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tipos', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(375): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:13:47 --> Undefined variable $tipospnrModel
+in APPPATH\Controllers\Admin.php on line 371.
+ 1 APPPATH\Controllers\Admin.php(371): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tipospnrModel', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 371)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:13:55 --> Call to a member function findall() on null
+in APPPATH\Controllers\Admin.php on line 371.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:14:10 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Admin.php on line 371.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 16:14:40 --> mysqli_sql_exception: Unknown column 'tipoPNR.deleted_at' in 'where clause' in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(371): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#12 {main}
+CRITICAL - 2023-12-05 16:14:40 --> Unknown column 'tipoPNR.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tipoPNR`
+WHERE `tipoPNR`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Admin.php(371): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:22:58 --> Undefined variable $pnrs
+in APPPATH\Views\admin\crear_PNR.php on line 12.
+ 1 APPPATH\Views\admin\crear_PNR.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnrs', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(377): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:29:45 --> Attempt to read property "alto" on array
+in APPPATH\Views\admin\crear_PNR.php on line 12.
+ 1 APPPATH\Views\admin\crear_PNR.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "alto" on array', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(379): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:30:40 --> Attempt to read property "alto" on array
+in APPPATH\Views\admin\crear_PNR.php on line 12.
+ 1 APPPATH\Views\admin\crear_PNR.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "alto" on array', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(387): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:30:43 --> Attempt to read property "alto" on array
+in APPPATH\Views\admin\crear_PNR.php on line 12.
+ 1 APPPATH\Views\admin\crear_PNR.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "alto" on array', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(387): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:31:15 --> Attempt to read property "alto" on array
+in APPPATH\Views\admin\crear_PNR.php on line 12.
+ 1 APPPATH\Views\admin\crear_PNR.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "alto" on array', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(387): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:34:34 --> Undefined variable $pnrs
+in APPPATH\Views\admin\crear_PNR.php on line 12.
+ 1 APPPATH\Views\admin\crear_PNR.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnrs', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(379): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:37:40 --> Cannot use object of type App\Models\PaquetesModel as array
+in APPPATH\Controllers\Admin.php on line 372.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:46:37 --> Undefined variable $repartidores
+in APPPATH\Views\admin\crear_PNR.php on line 13.
+ 1 APPPATH\Views\admin\crear_PNR.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repartidores', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(378): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:47:11 --> Undefined variable $repartidores
+in APPPATH\Views\admin\crear_PNR.php on line 13.
+ 1 APPPATH\Views\admin\crear_PNR.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repartidores', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\crear_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/crear_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/crear_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:47:56 --> Undefined array key "repartidor"
+in APPPATH\Controllers\Admin.php on line 387.
+ 1 APPPATH\Controllers\Admin.php(387): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "repartidor"', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 387)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertPNR()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:48:49 --> Undefined array key "repartidor"
+in APPPATH\Controllers\Admin.php on line 387.
+ 1 APPPATH\Controllers\Admin.php(387): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "repartidor"', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 387)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertPNR()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:49:19 --> Undefined array key "tipoPNR"
+in APPPATH\Controllers\Admin.php on line 388.
+ 1 APPPATH\Controllers\Admin.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipoPNR"', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 388)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertPNR()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:51:22 --> Undefined array key "idCodigo"
+in APPPATH\Controllers\Admin.php on line 388.
+ 1 APPPATH\Controllers\Admin.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idCodigo"', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 388)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertPNR()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 16:52:03 --> Undefined variable $carroModel
+in APPPATH\Controllers\Admin.php on line 393.
+ 1 APPPATH\Controllers\Admin.php(393): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carroModel', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 393)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertPNR()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 16:52:22 --> mysqli_sql_exception: Unknown column 'repartidor' in 'field list' in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `PN...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PN...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PN...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PN...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(393): CodeIgniter\Model->insert(Array)
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->insertPNR()
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#13 {main}
+CRITICAL - 2023-12-05 16:52:22 --> Unknown column 'repartidor' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PNR` (`repartidor`, `idCodigo`, `tipoPNR`, `descripcion`) VALUES (:repartidor:, :idCodigo:, :tipoPNR:, :descripcion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(393): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 16:53:06 --> mysqli_sql_exception: Unknown column 'idCodigo' in 'field list' in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `PN...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PN...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PN...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PN...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(393): CodeIgniter\Model->insert(Array)
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->insertPNR()
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#13 {main}
+CRITICAL - 2023-12-05 16:53:06 --> Unknown column 'idCodigo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PNR` (`idRepartidor`, `idCodigo`, `tipoPNR`, `descripcion`) VALUES (:idRepartidor:, :idCodigo:, :tipoPNR:, :descripcion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(393): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 16:57:13 --> mysqli_sql_exception: Unknown column 'idCodigo' in 'field list' in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `PN...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PN...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PN...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PN...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(393): CodeIgniter\Model->insert(Array)
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->insertPNR()
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#13 {main}
+CRITICAL - 2023-12-05 16:57:13 --> Unknown column 'idCodigo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PNR` (`idRepartidor`, `idCodigo`, `tipoPNR`, `descripcion`) VALUES (:idRepartidor:, :idCodigo:, :tipoPNR:, :descripcion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(393): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 16:57:22 --> mysqli_sql_exception: Unknown column 'idCodigo' in 'field list' in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `PN...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PN...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PN...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PN...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(393): CodeIgniter\Model->insert(Array)
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->insertPNR()
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#13 {main}
+CRITICAL - 2023-12-05 16:57:22 --> Unknown column 'idCodigo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PNR` (`idRepartidor`, `idCodigo`, `tipoPNR`, `descripcion`) VALUES (:idRepartidor:, :idCodigo:, :tipoPNR:, :descripcion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(393): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 16:57:43 --> mysqli_sql_exception: Unknown column 'tipoPNR' in 'field list' in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `PN...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PN...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PN...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PN...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(393): CodeIgniter\Model->insert(Array)
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->insertPNR()
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#13 {main}
+CRITICAL - 2023-12-05 16:57:43 --> Unknown column 'tipoPNR' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PNR` (`idRepartidor`, `idComparativa`, `tipoPNR`, `descripcion`) VALUES (:idRepartidor:, :idComparativa:, :tipoPNR:, :descripcion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(393): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->insertPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-12-05 17:01:18 --> mysqli_sql_exception: Unknown column 'PNR.idInfo' in 'where clause' in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT PNR.*, t...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT PNR.*, t...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT PNR.*, t...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(356): CodeIgniter\Database\BaseConnection->query('SELECT PNR.*, t...')
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#9 {main}
+CRITICAL - 2023-12-05 17:01:18 --> Unknown column 'PNR.idInfo' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\Admin.php(356): CodeIgniter\Database\BaseConnection->query('SELECT PNR.*, tipoPNR.*, infoPaquetes.*, repartidor.*
+            FROM PNR, tipoPNR, infoPaquetes, repartidor 
+            where PNR.idT = tipoPNR.idT 
+            and PNR.idInfo = infoPaquetes.idInfo
+            and PNR.idRepartidor = repartidor.idRepartidor')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 17:16:03 --> Undefined variable $conmparativas
+in APPPATH\Views\admin\mostrar_PNR.php on line 28.
+ 1 APPPATH\Views\admin\mostrar_PNR.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conmparativas', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(361): view('admin/mostrar_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 17:16:51 --> Undefined variable $conmparativas
+in APPPATH\Views\admin\mostrar_PNR.php on line 28.
+ 1 APPPATH\Views\admin\mostrar_PNR.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conmparativas', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(364): view('admin/mostrar_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-12-05 17:16:53 --> Undefined variable $conmparativas
+in APPPATH\Views\admin\mostrar_PNR.php on line 28.
+ 1 APPPATH\Views\admin\mostrar_PNR.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conmparativas', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrar_PNR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrar_PNR', [], true)
+ 5 APPPATH\Controllers\Admin.php(364): view('admin/mostrar_PNR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPNR()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-05 17:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-05 17:58:36 --> The route for "/usuario/login" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/usuario/login')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Admin.php(18): redirect('/usuario/login', 'refresh')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarInicio()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-05 17:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 17:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-05 17:59:31 --> The route for "/usuario/login" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/usuario/login')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Admin.php(18): redirect('/usuario/login', 'refresh')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarInicio()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-05 17:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-05 17:59:43 --> The route for "/usuario/login" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/usuario/login')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Admin.php(18): redirect('/usuario/login', 'refresh')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarInicio()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-05 17:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-05 17:59:50 --> The route for "/usuario/login" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/usuario/login')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Admin.php(18): redirect('/usuario/login', 'refresh')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarInicio()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-05 18:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-05 18:00:07 --> The route for "/usuario/login" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/usuario/login')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Admin.php(18): redirect('/usuario/login', 'refresh')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarInicio()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-05 18:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-05 18:00:16 --> The route for "/usuario/login" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/usuario/login')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Admin.php(18): redirect('/usuario/login', 'refresh')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarInicio()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+INFO - 2023-12-05 18:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:16:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:19:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:19:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:32:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 18:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 19:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

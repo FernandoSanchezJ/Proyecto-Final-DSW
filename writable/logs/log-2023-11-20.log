@@ -1,0 +1,26 @@
+CRITICAL - 2023-11-20 06:13:30 --> Undefined variable $carroModel
+in APPPATH\Controllers\Admin.php on line 145.
+ 1 APPPATH\Controllers\Admin.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carroModel', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 145)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPaquete()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-20 06:14:02 --> Undefined variable $carroModel
+in APPPATH\Controllers\Admin.php on line 145.
+ 1 APPPATH\Controllers\Admin.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carroModel', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 145)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregarPaquete()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-20 06:41:11 --> Invalid file: "admin/agregar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/agregar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/agregar', [], true)
+ 3 APPPATH\Controllers\Admin.php(56): view('admin/agregar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')

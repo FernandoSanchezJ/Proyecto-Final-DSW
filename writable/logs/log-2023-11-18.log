@@ -1,0 +1,144 @@
+CRITICAL - 2023-11-18 03:52:10 --> Undefined property: stdClass::$idIC
+in APPPATH\Views\admin\mostrarR.php on line 19.
+ 1 APPPATH\Views\admin\mostrarR.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idIC', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarR.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrarR', [], true)
+ 5 APPPATH\Controllers\Admin.php(41): view('admin/mostrarR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarInicio()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-18 03:52:11 --> Undefined property: stdClass::$idIC
+in APPPATH\Views\admin\mostrarR.php on line 19.
+ 1 APPPATH\Views\admin\mostrarR.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idIC', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarR.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarR.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrarR', [], true)
+ 5 APPPATH\Controllers\Admin.php(41): view('admin/mostrarR', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarInicio()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-11-18 06:36:01 --> mysqli_sql_exception: Unknown table 'proyecto.cs' in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pk`.*, ...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pk`.*, ...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pk`.*, ...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pk`.*, ...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->mostrarPaquetes()
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#10 {main}
+CRITICAL - 2023-11-18 06:36:01 --> Unknown table 'proyecto.cs'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pk`.*, `cs`.*, `r`.`ruta`
+FROM `paquete` `pk`
+JOIN `ruta` `r` ON `r`.`ruta` = `pk`.`idRuta`', [], false)
+ 2 APPPATH\Controllers\Admin.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPaquetes()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-11-18 06:36:12 --> mysqli_sql_exception: Unknown table 'proyecto.cs' in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `pk`.*, ...', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pk`.*, ...')
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pk`.*, ...')
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pk`.*, ...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->mostrarPaquetes()
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#10 {main}
+CRITICAL - 2023-11-18 06:36:12 --> Unknown table 'proyecto.cs'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `pk`.*, `cs`.*, `r`.`ruta`
+FROM `paquete` `pk`
+JOIN `ruta` `r` ON `r`.`ruta` = `pk`.`idRuta`', [], false)
+ 2 APPPATH\Controllers\Admin.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPaquetes()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-18 06:40:42 --> Undefined variable $repartidoresModel
+in APPPATH\Controllers\Admin.php on line 66.
+ 1 APPPATH\Controllers\Admin.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repartidoresModel', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 66)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPaquetes()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-18 06:40:59 --> Undefined variable $data1
+in APPPATH\Controllers\Admin.php on line 71.
+ 1 APPPATH\Controllers\Admin.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data1', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPaquetes()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-18 06:41:08 --> Undefined property: stdClass::$ruta
+in APPPATH\Views\admin\mostrarP.php on line 24.
+ 1 APPPATH\Views\admin\mostrarP.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ruta', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarP.php', 24)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarP.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrarP', [], true)
+ 5 APPPATH\Controllers\Admin.php(71): view('admin/mostrarP', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPaquetes()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-18 06:43:11 --> Undefined property: stdClass::$ruta
+in APPPATH\Views\admin\mostrarP.php on line 24.
+ 1 APPPATH\Views\admin\mostrarP.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ruta', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarP.php', 24)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarP.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrarP', [], true)
+ 5 APPPATH\Controllers\Admin.php(72): view('admin/mostrarP', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPaquetes()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-18 06:45:28 --> Undefined variable $data1
+in APPPATH\Controllers\Admin.php on line 71.
+ 1 APPPATH\Controllers\Admin.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data1', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPaquetes()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-18 06:45:33 --> Undefined variable $repartidor
+in APPPATH\Views\admin\mostrarP.php on line 26.
+ 1 APPPATH\Views\admin\mostrarP.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repartidor', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarP.php', 26)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarP.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrarP', [], true)
+ 5 APPPATH\Controllers\Admin.php(71): view('admin/mostrarP', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPaquetes()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-18 06:46:14 --> Undefined variable $paqute
+in APPPATH\Views\admin\mostrarP.php on line 28.
+ 1 APPPATH\Views\admin\mostrarP.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paqute', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarP.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\mostrarP.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/mostrarP', [], true)
+ 5 APPPATH\Controllers\Admin.php(71): view('admin/mostrarP', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->mostrarPaquetes()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')

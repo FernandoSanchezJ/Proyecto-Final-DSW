@@ -1,0 +1,234 @@
+ERROR - 2023-11-26 04:53:37 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'proyecto', 3306, '', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->agregar()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(50): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->agregar()
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#11 {main}
+CRITICAL - 2023-11-26 04:53:37 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `carro`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Admin.php(50): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-11-26 04:53:46 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'proyecto', 3306, '', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->agregar()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(50): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->agregar()
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#11 {main}
+CRITICAL - 2023-11-26 04:53:46 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `carro`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Admin.php(50): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+ERROR - 2023-11-26 04:53:57 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'proyecto', 3306, '', 0)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->agregar()
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\tailo\OneDrive\Escritorio\proyecto\app\Controllers\Admin.php(50): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(919): App\Controllers\Admin->agregar()
+#7 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\tailo\OneDrive\Escritorio\proyecto\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\tailo\OneDrive\Escritorio\proyecto\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\...')
+#11 {main}
+CRITICAL - 2023-11-26 04:53:57 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `carro`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Admin.php(50): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-26 06:13:44 --> Undefined variable $repModel
+in APPPATH\Controllers\Admin.php on line 88.
+ 1 APPPATH\Controllers\Admin.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repModel', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->editar('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-26 06:14:27 --> Invalid file: "common/barraNav.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('common/barraNav.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('common/barraNav', [], true)
+ 3 APPPATH\Controllers\Admin.php(92): view('common/barraNav')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->editar('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-26 06:14:46 --> Invalid file: "admin/editar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/editar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/editar', [], true)
+ 3 APPPATH\Controllers\Admin.php(93): view('admin/editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->editar('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-26 06:15:30 --> Invalid file: "admin/editar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/editar.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/editar', [], true)
+ 3 APPPATH\Controllers\Admin.php(93): view('admin/editar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->editar('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-26 20:44:59 --> Undefined array key "sexo"
+in APPPATH\Controllers\Admin.php on line 105.
+ 1 APPPATH\Controllers\Admin.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sexo"', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 105)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-26 20:45:13 --> Undefined array key "sexo"
+in APPPATH\Controllers\Admin.php on line 105.
+ 1 APPPATH\Controllers\Admin.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sexo"', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 105)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-26 20:45:24 --> Undefined array key "idRepartidor"
+in APPPATH\Controllers\Admin.php on line 113.
+ 1 APPPATH\Controllers\Admin.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idRepartidor"', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-26 20:46:35 --> Undefined array key "idRepartidor"
+in APPPATH\Controllers\Admin.php on line 113.
+ 1 APPPATH\Controllers\Admin.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idRepartidor"', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-26 20:51:31 --> Undefined array key "idRepartidor"
+in APPPATH\Controllers\Admin.php on line 113.
+ 1 APPPATH\Controllers\Admin.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idRepartidor"', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Controllers\\Admin.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-26 20:56:30 --> Undefined variable $repartidor
+in APPPATH\Views\admin\editar_rep.php on line 10.
+ 1 APPPATH\Views\admin\editar_rep.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $repartidor', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\editar_rep.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\editar_rep.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/editar_rep', [], true)
+ 5 APPPATH\Controllers\Admin.php(93): view('admin/editar_rep', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->editar('7')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
+CRITICAL - 2023-11-26 21:02:22 --> Undefined property: stdClass::$Edad
+in APPPATH\Views\admin\editar_rep.php on line 23.
+ 1 APPPATH\Views\admin\editar_rep.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Edad', 'C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\editar_rep.php', 23)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\app\\Views\\admin\\editar_rep.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/editar_rep', [], true)
+ 5 APPPATH\Controllers\Admin.php(93): view('admin/editar_rep', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->editar('7')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tailo\\OneDrive\\Escritorio\\proyecto\\public\\index.php')
